@@ -1,4 +1,4 @@
-package day6;
+package main.java.day6;
 
 public class Teacher {
     String name;
@@ -9,12 +9,21 @@ public class Teacher {
         this.theme = theme;
     }
 
-    int evaluate(String student) {
+    void evaluate(String student) {
         int min = 2;
         int max = 5;
         int randomNumber = (int)((Math.random() * (max - min)) + min);
+        String value;
+        if (randomNumber == 2) {
+            value = "неудовлетворительно";
+        } else if (randomNumber == 3) {
+            value = "удовлетворительно";
+        } else if (randomNumber == 4) {
+            value = "хорошо";
+        } else {
+            value = "отлично";
+        }
         System.out.println("Преподаватель " + name + " оценил студента с именем " + student +
-                " по предмету " + theme + " на оценку " + randomNumber);
-        return randomNumber;  // ?
+                " по предмету " + theme + " на оценку " + value);
     }
 }

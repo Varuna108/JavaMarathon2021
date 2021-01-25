@@ -1,4 +1,4 @@
-package day6;
+package main.java.day6;
 
 public class Student {
     String name;

@@ -1,4 +1,6 @@
-package day6;
+package main.java.day6;
+
+import java.io.IOException;
 
 public class Task1 {
     public static void main(String[] args) throws IOException {
