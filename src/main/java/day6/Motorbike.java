@@ -31,17 +31,8 @@ public class Motorbike {
         System.out.println("Это мотоцикл");
     }
 
-    int yearDifference() throws IOException { // разница между введенным годом и полученным в классе
-        BufferedReader bReader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Введите год для расчета разницы объекта мотоцикл: ");
-        int inputYear = Integer.parseInt(bReader.readLine());
-        int resultDifference = 0;
-        if (inputYear > year) {
-            resultDifference = inputYear - year;
-        } else {
-            resultDifference = year - inputYear;
-        }
-        return resultDifference;
+    int yearDifference(int inputYear) { // разница между введенным годом и полученным в классе
+        return Math.abs(inputYear - year);
     }
 
 }

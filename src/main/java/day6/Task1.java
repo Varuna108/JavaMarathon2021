@@ -15,11 +15,8 @@ public class Task1 {
         car.info();
         motorbike.info();
 
-        int yearDifferenceCar = car.yearDifference();
-        System.out.println("Разница в годах для объекта - автомобиль: " + yearDifferenceCar);
-
-        int yearDifferenceMotorbike = motorbike.yearDifference();
-        System.out.println("Разница в годах для объекта - мотоцикл: " + yearDifferenceMotorbike);
+        System.out.println(car.yearDifference(1900));
+        System.out.println(motorbike.yearDifference(2000));
 
     }
 }

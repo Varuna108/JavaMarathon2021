@@ -1,8 +1,8 @@
 package main.java.day6;
 
 public class Teacher {
-    String name;
-    String theme;
+    private String name;
+    private String theme;
 
     public Teacher(String name, String theme) {
         this.name = name;

@@ -5,7 +5,7 @@ public class Task3 {
         Student student = new Student("John");      // создание объекта Student
         Teacher teacher = new Teacher("ph. D. David Blein", "Magic");       // создание объекта Teacher
 
-        teacher.evaluate(student.name);
+        teacher.evaluate(student.getName());
 
     }
 }
