@@ -15,7 +15,7 @@ public class Task2 {
             player[0].run();
         }
 
-        Player.getCountPlayers();
+        Player.printCountPlayers();
 
 
 

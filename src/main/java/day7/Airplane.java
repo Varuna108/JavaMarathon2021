@@ -43,16 +43,22 @@ public class Airplane {
         return fuel;
     }
 
-    void info() {
+    public void info() {
         System.out.println("Изготовитель: " + producer + ", год выпуска: " + year + ", длина: " + length + ", вес: " +
                 weight + ", количество топлива в баке: " + fuel);
     }
 
-    void fillUp(int n) {
+    public void fillUp(int n) {
         fuel = n;
     }
 
     public static void compareAirlines (int airplane1, int airplane2) {
-        System.out.println(Math.max(airplane1, airplane2));
+        if (airplane1 == airplane2) {
+            System.out.println("Длина равна");
+        } else {
+            System.out.println(Math.max(airplane1, airplane2));
+        }
+
+
     }
 }
