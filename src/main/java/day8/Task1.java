@@ -17,9 +17,8 @@ public class Task1 {
 
         long start2 = System.currentTimeMillis();             // JustString
         String someString = "";
-        int[] intArray = new int[20000];
-        for (int i = 0; i <= intArray.length; i++) {
-            someString = someString.concat(String.valueOf(i)).concat(" ");
+        for (int i = 0; i <= 20000; i++) {
+            someString += i + " ";
         }
         System.out.println(someString);
         long finish2 = System.currentTimeMillis();
