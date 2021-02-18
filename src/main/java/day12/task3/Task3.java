@@ -1,4 +1,4 @@
-package main.java.day12.task3;
+package day12.task3;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -28,32 +28,24 @@ public class Task3 {
         listOfBands.add(musicBand8);
         listOfBands.add(musicBand9);
         listOfBands.add(musicBand10);
-
         Collections.shuffle(listOfBands);
 
-//        List<MusicBand> listOfBandsAfter2000 = new ArrayList<>();
-
-        groupsAfter2000(listOfBands);
-
-
-
-
+        System.out.println(groupsAfter2000(listOfBands));
     }
 
     public static List<MusicBand> groupsAfter2000(List<MusicBand> listOfBands) {
         List<MusicBand> listOfBandsAfter2000 = new ArrayList<>();
-
-        for (int i = 0; i < listOfBands.size(); ) {
-            if (listOfBands.get(i).getYear() > 2000) {
-                listOfBandsAfter2000.add(listOfBands.get(i));
+        for (MusicBand listOfBand : listOfBands) {
+            if (listOfBand.getYear() > 2000) {
+                listOfBandsAfter2000.add(listOfBand);
             }
         }
-
-      //  System.out.println(listOfBandsAfter2000);
+        //System.out.println(listOfBandsAfter2000);
 
         return listOfBandsAfter2000;
     }
 }
+
 //
 //        Создать статический метод в классе Task3:
 //        public static List<MusicBand> groupsAfter2000(List<MusicBand> bands)
